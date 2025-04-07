@@ -18,7 +18,7 @@ connectDB()
     });
   })
   .catch((error) => {
-    console.log("MONO db connection Fialed !!!!", error);
+    console.log("MONGO db connection Fialed !!!!", error);
   });
 
 /* 
