@@ -287,7 +287,7 @@ const updateUserAvatar = asyncHandler(async (req, res) => {
   if (!avatarLocalPath) {
     throw new ApiError(400, "Avatar file is missing");
   }
-
+  // TODO:delete old image from cloudinary (make a utility)
   const avatar = await uploadCloudinary(avatarLocalPath);
 
   if (!avatar.url) {
